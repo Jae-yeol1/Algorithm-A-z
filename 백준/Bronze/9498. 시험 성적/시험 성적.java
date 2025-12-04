@@ -1,28 +1,23 @@
-import java.util.Scanner;
+import java.io.BufferedReader; 
+import java.io.InputStreamReader; 
+import java.io.IOException; 
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int score = scanner.nextInt();
-        String grade;
+public class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-      
+        int i = Integer.parseInt(br.readLine());
         
-        if (score >= 90) {
-        // 90점 이상 100점 이하
-            grade = "A";
-            } else if (score >= 80) {
-            // 80점 이상 90점 미만
-                grade = "B";
-                } else if (score >= 70) {
-                    // 70점 이상 80점 미만
-                        grade = "C";
-                    } else if (score >= 60) {
-                     // 60점 이상 70점 미만
-                        grade = "D";
-                        } else {
-                         grade = "F";
-                        }
-        System.out.println(grade);
+        if ( i >= 90 ){
+            System.out.println('A');
+        }else if ( i >= 80){
+            System.out.println('B');
+        }else if ( i >= 70 ){
+            System.out.println('C');
+        }else if ( i >= 60 ){
+            System.out.println('D');
+        }else {
+            System.out.println('F');
+        }
     }
 }
