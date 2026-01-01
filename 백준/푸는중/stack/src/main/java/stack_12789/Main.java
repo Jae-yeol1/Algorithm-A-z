@@ -20,7 +20,7 @@ public class Main {
 
         // 현재 간식 배급순서
         int current = 1;
-
+        // hasMoreTokens() 남은 토큰있나 확인하는 토크나이저 함수
         while (st.hasMoreTokens()) {
             int student = Integer.parseInt(st.nextToken());
 
